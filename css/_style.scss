@@ -1,0 +1,80 @@
+
+
+.standart-btn{
+    font-family: 'Roboto-Medium';
+    height:30px;
+    line-height: 30px;
+    border:1px solid $whiteColor;
+    color:$whiteColor;
+    @include borderRadius(18px);
+    display: inline-block;
+    padding: 0px 15px;
+    font-size:16px;
+    cursor: pointer;
+}
+
+header{
+    position:fixed;
+    z-index: 12;
+    width:100%;
+    padding:30px 0px;
+    .employer-login{
+        @extend .standart-btn;
+    }
+     .register-btn{
+        @extend .standart-btn;
+     }
+     .login-btn{
+        @extend .standart-btn;
+        margin-left:20px;
+     }
+}
+
+.banner-section{
+    height: 70vh;
+    background-color: $orangeColor;
+    width: 100%;
+    position: relative;
+    display: flex;
+    .banner-search{
+        .search-section{
+            display: flex;
+            form{
+                display: flex;
+                width: 100%;
+            }
+            .search-input{
+                flex: 1 1;
+                display: flex;
+                i{
+                    margin:16px 0px 0px 16px;
+                    font-size:24px;
+                    color:$greyColor;
+                    position: absolute;
+                }
+                input[type=text]{
+                    height: 56px;
+                    line-height: 56px;
+                    background-color: $whiteColor;
+                    @include borderRadius(28px);
+                    border:0px;
+                    width: 100%;
+                    color:$greyColor;
+                    padding-left: 56px;
+                }
+            }
+
+            input[type=submit]{
+                height: 56px;
+                line-height: 56px;
+                background-color: $blueColor;
+                @include borderRadius(28px);
+                border:0px;
+                display: inline-block;
+                padding:0px 3rem;
+                color:$whiteColor;
+            }
+        }
+    }
+
+}
