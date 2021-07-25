@@ -1,7 +1,8 @@
 $('#mostsearch').owlCarousel({
-    loop:true,
-    margin:10,
+    loop:false,
+    margin:16,
     nav:true,
+    items:5,
     responsive:{
         0:{
             items:1
