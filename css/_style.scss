@@ -12,7 +12,17 @@
     font-size:16px;
     cursor: pointer;
 }
-
+.standart-link{
+    text-decoration:underline ;
+    font-family: 'Roboto-Medium';
+    color:$whiteColor;
+    font-size:14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
 header{
     position:fixed;
     z-index: 12;
@@ -39,6 +49,7 @@ header{
     .banner-search{
         .search-section{
             display: flex;
+            margin-bottom:50px;
             form{
                 display: flex;
                 width: 100%;
@@ -61,10 +72,29 @@ header{
                     width: 100%;
                     color:$greyColor;
                     padding-left: 56px;
+                    &::placeholder{
+                        font-size: 18px;
+                        color:$greyColor;
+                    }
+                    &:focus{
+                        //outline:1px solid $greyColor;
+                        outline: none;
+                        @include borderRadius(28px);
+                        box-shadow: 0 0 3pt 2pt cornflowerblue;
+                    }
                 }
             }
-
+            .search-btn-section{
+                .detail-search{
+                    @extend .standart-link;
+                    text-align: center;
+                    margin: 10px 0px 0px 30px;
+                    height: 18px;
+                    line-height: 18px;
+                }
+            }
             input[type=submit]{
+                margin-left:30px;
                 height: 56px;
                 line-height: 56px;
                 background-color: $blueColor;
@@ -77,4 +107,47 @@ header{
         }
     }
 
+}
+
+.most-search-section{
+    background-color: $greyColorOpacity05;
+    
+    .mostsearch-inside{
+        display: flex;
+        .most-search-title{
+            width: 163px;
+            height: 25px;
+            margin: 36px 32px 35px 0;
+            font-family:"Roboto-Black";
+            font-size: 20px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $wightGreyColor;
+        }
+        .most-search{
+            display: flex;
+            .mostsearch-tag{
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color:$wightGreyColor;
+                display: inline-block;
+                padding:0px 3rem;
+                height: 50px;
+                margin: 0 17px 0 0;
+                line-height: 50px;
+                border-radius: 28px;
+                border: solid 1px $borderGreyColor;
+                background-color: $lightGreyColor;
+            }
+        }
+    }
 }
