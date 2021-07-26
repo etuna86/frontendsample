@@ -31,6 +31,11 @@ header{
     z-index: 12;
     width:100%;
     padding:30px 0px;
+    @include transitionMethod(0.2s);
+    &.header-blue{
+        background-color:$blueColor;
+        @include boxShadow();
+    }
     .employer-login{
         @extend .standart-btn;
     }
@@ -323,6 +328,8 @@ header{
     }
 }
 .home-brands-section{
+    position: relative;
+    float: left;
     .home-brands{
         margin-top:30px;
         background-color: $brandColor;
@@ -349,10 +356,11 @@ footer{
     margin-top:40px;
     .footer-top{
         position: relative;
+
         .footer-left{
             width:368px;
             position: absolute;
-            top:0px;
+            bottom:0px;
             left:0px;
             img{
                 width:100%;
@@ -368,8 +376,10 @@ footer{
         line-height: normal;
         letter-spacing: normal;
         color: $wightGreyColor;
+        margin-bottom:20px;
     }
     .footer-menu{
+        padding-bottom:40px;
         h3{
             font-family: 'Roboto-Black';
             font-size: 18px;
@@ -386,7 +396,7 @@ footer{
             li{
                 list-style: none;
                 a{
-                    font-family: 'Roboto-regular';
+                    font-family: 'Roboto-Regular';
                     font-size: 16px;
                     font-weight: normal;
                     font-stretch: normal;
@@ -397,6 +407,75 @@ footer{
                     text-decoration: none;
                 }
             }
+        }
+    }
+    .footer-bottom{
+        padding: 30px 0px;
+        background-color: $footerBottomGreyColor;
+        .copyright{
+            font-family: 'Roboto-Regular';
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            color: $whiteColor;
+            text-decoration: none;
+        }
+        .footer-bottom-menu{
+          
+            ul{
+                margin:0px;
+                padding:0px;
+                li{
+                    list-style: none;
+                    float: left;
+                    border-right:1px solid $whiteColor;
+                    padding:0px 10px;
+                    height: 30px;
+                    line-height: 30px;
+                    &:last-child{
+                        border-right:0px !important;
+                    }
+                    a{
+                        font-family: 'Roboto-Regular';
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.5;
+                        letter-spacing: normal;
+                        color: $whiteColor;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .bottom-down{
+            display: flex;
+            margin-top:40px;
+            .bottom-img{
+                width:80px;
+                flex :1 1;
+            }
+            .bottom-text{
+                margin-lefT:16px;
+                p{
+                    font-family:'Roboto-Regular';
+                    font-size: 8px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.75;
+                    letter-spacing: normal;
+                    color: $whiteColor;
+                }
+            }
+        }
+        .dropdown-toggle{
+            background: none !important;
+            border:0px !important;
         }
     }
 }

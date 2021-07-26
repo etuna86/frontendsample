@@ -37,3 +37,18 @@ $('#jobadv').owlCarousel({
         }
     }
 })
+
+$(document).ready(function () {
+    $('.dropdown-toggle').dropdown();
+});
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 200) {
+        $( "header" ).addClass("header-blue");
+    } else {
+        $( "header" ).removeClass("header-blue");
+
+    }
+})

@@ -7,6 +7,7 @@ $lightBlueColor:#6b7998;
 $greyColor:#808285;
 $brandColor:#f7f6f6;
 $wightGreyColor:#666768;
+$footerBottomGreyColor:#626160;
 $cccGreyColor:#cccccc;
 $navGreyColor:#797674;
 $greyColorOpacity05:rgba(107, 121, 152, 0.05);
@@ -46,4 +47,39 @@ $borderGreyColor:rgba(191, 191, 191, 0.7);
   -moz-border-bottom-left-radius:$bordervalleft ;
   border-bottom-left-radius:$bordervalleft ;
 
+}
+
+
+@mixin headerShadow()
+{
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(0, 0, 0, 0) 1.62%,rgba(0, 0, 0, 0.09) 10.44%,rgba(0, 0, 0, 1) 100%);
+  background : -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0) 1.62%, rgba(0, 0, 0, 0.09) 10.44%, rgba(0, 0, 0, 1) 100%);
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0.0162,rgba(0, 0, 0, 0) ),color-stop(0.1044,rgba(0, 0, 0, 0.09) ),color-stop(1,rgba(0, 0, 0, 1) ));
+  background : -o-linear-gradient(90deg, rgba(0, 0, 0, 0) 1.62%, rgba(0, 0, 0, 0.09) 10.44%, rgba(0, 0, 0, 1) 100%);
+  background : -ms-linear-gradient(90deg, rgba(0, 0, 0, 0) 1.62%, rgba(0, 0, 0, 0.09) 10.44%, rgba(0, 0, 0, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
+  background : linear-gradient(0deg, rgba(0, 0, 0, 0) 1.62%, rgba(0, 0, 0, 0.09) 10.44%, rgba(0, 0, 0, 1) 100%);
+  opacity : 0.6;
+  filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=0);
+}
+@mixin transitionMethod($time){
+  transition: all $time ease-in;
+  -moz-transition: all $time ease-in;
+  -webkit-transition: all $time ease-in;
+  -ms-transition: all $time ease-in;
+}
+
+
+@mixin grayScaleMethod($grayScale){
+  -webkit-filter: grayscale($grayScale);
+  filter: grayscale($grayScale);
+  -moz-filter: grayscale($grayScale);
+  -ms-filter: grayscale($grayScale);
+  -o-filter: grayscale($grayScale);
+}
+
+@mixin boxShadow(){
+  -webkit-box-shadow: 0 2px 2px 1px rgba(41, 41, 41, 0.1);
+  -moz-box-shadow: 0 2px 2px 1px rgba(41, 41, 41, 0.1);
+  box-shadow: 0 2px 2px 1px rgba(41, 41, 41, 0.1);
 }

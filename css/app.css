@@ -43,6 +43,15 @@ header {
   z-index: 12;
   width: 100%;
   padding: 30px 0px;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+}
+
+header.header-blue {
+  background-color: #4361ee;
+  box-shadow: 0 2px 2px 1px rgba(41, 41, 41, 0.1);
 }
 
 header .login-btn {
@@ -350,6 +359,11 @@ header .login-btn {
   font-weight: 900;
 }
 
+.home-brands-section {
+  position: relative;
+  float: left;
+}
+
 .home-brands-section .home-brands {
   margin-top: 30px;
   background-color: #f7f6f6;
@@ -384,7 +398,7 @@ footer .footer-top {
 footer .footer-top .footer-left {
   width: 368px;
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   left: 0px;
 }
 
@@ -401,6 +415,11 @@ footer .footer-title {
   line-height: normal;
   letter-spacing: normal;
   color: #666768;
+  margin-bottom: 20px;
+}
+
+footer .footer-menu {
+  padding-bottom: 40px;
 }
 
 footer .footer-menu h3 {
@@ -424,7 +443,7 @@ footer .footer-menu ul li {
 }
 
 footer .footer-menu ul li a {
-  font-family: 'Roboto-regular';
+  font-family: 'Roboto-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -433,5 +452,82 @@ footer .footer-menu ul li a {
   letter-spacing: normal;
   color: #666768;
   text-decoration: none;
+}
+
+footer .footer-bottom {
+  padding: 30px 0px;
+  background-color: #626160;
+}
+
+footer .footer-bottom .copyright {
+  font-family: 'Roboto-Regular';
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .footer-bottom .footer-bottom-menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer .footer-bottom .footer-bottom-menu ul li {
+  list-style: none;
+  float: left;
+  border-right: 1px solid #ffffff;
+  padding: 0px 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+footer .footer-bottom .footer-bottom-menu ul li:last-child {
+  border-right: 0px !important;
+}
+
+footer .footer-bottom .footer-bottom-menu ul li a {
+  font-family: 'Roboto-Regular';
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .footer-bottom .bottom-down {
+  display: flex;
+  margin-top: 40px;
+}
+
+footer .footer-bottom .bottom-down .bottom-img {
+  width: 80px;
+  flex: 1 1;
+}
+
+footer .footer-bottom .bottom-down .bottom-text {
+  margin-lefT: 16px;
+}
+
+footer .footer-bottom .bottom-down .bottom-text p {
+  font-family: 'Roboto-Regular';
+  font-size: 8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+footer .footer-bottom .dropdown-toggle {
+  background: none !important;
+  border: 0px !important;
 }
 /*# sourceMappingURL=app.css.map */
