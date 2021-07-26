@@ -18,6 +18,11 @@
   src: url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'NunitoSans-Bold';
+  src: url("../fonts/Nunito_Sans/NunitoSans-Bold.ttf") format("truetype");
+}
+
 .standart-btn, header .employer-login, header .register-btn, header .login-btn {
   font-family: 'Roboto-Medium';
   height: 30px;
@@ -82,14 +87,22 @@ header .login-btn {
   display: flex;
 }
 
-.banner-section .banner-search .search-section {
-  display: flex;
-  margin-bottom: 50px;
+.banner-section .banner-search form {
+  position: relative;
 }
 
-.banner-section .banner-search .search-section form {
+.banner-section .banner-search .search-section {
+  padding: 20px 30px;
   display: flex;
-  width: 100%;
+  margin-bottom: 30px;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+}
+
+.banner-section .banner-search .search-section.open {
+  box-shadow: 0 12px 20px 0 rgba(147, 76, 17, 0.4);
 }
 
 .banner-section .banner-search .search-section .search-input {
@@ -131,6 +144,7 @@ header .login-btn {
   margin: 10px 0px 0px 30px;
   height: 18px;
   line-height: 18px;
+  cursor: pointer;
 }
 
 .banner-section .banner-search .search-section input[type=submit] {
@@ -146,6 +160,113 @@ header .login-btn {
 }
 
 .banner-section .banner-search .search-section input[type=submit]:hover {
+  font-family: "Roboto-Black";
+  background: #ffffff;
+  color: #4361ee;
+  font-weight: 900;
+}
+
+.banner-section .banner-search .detail-search-section {
+  box-shadow: 0 12px 20px 0 rgba(147, 76, 17, 0.4);
+  padding: 0px;
+  position: absolute;
+  z-index: 12;
+  background-color: #ff8100;
+  top: 120px;
+  overflow: hidden;
+  height: 0px;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+}
+
+.banner-section .banner-search .detail-search-section.open {
+  border-top: 1px solid #ffffff;
+  padding: 30px;
+  height: 413px;
+}
+
+.banner-section .banner-search .detail-search-section .detail-title h3 {
+  text-align: center;
+  font-family: "Roboto-Bold";
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.banner-section .banner-search .detail-search-section label {
+  font-family: 'NunitoSans-Bold';
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin: 0px 0px 5px 20px;
+}
+
+.banner-section .banner-search .detail-search-section select {
+  padding: 0px;
+  height: 56px;
+  line-height: 56px;
+  background-color: #ffffff;
+  border-radius: 28px;
+  border: 0px;
+  width: 100%;
+  color: #808285;
+  padding-left: 56px;
+  margin-bottom: 20px;
+}
+
+.banner-section .banner-search .detail-search-section select::placeholder {
+  font-size: 18px;
+  color: #808285;
+}
+
+.banner-section .banner-search .detail-search-section select:focus {
+  outline: none;
+  border-radius: 28px;
+  box-shadow: 0 0 3pt 2pt cornflowerblue;
+}
+
+.banner-section .banner-search .detail-search-section .search-btn-section button {
+  border: 0px;
+  background: 0px;
+  font-family: "Roboto-Black";
+  font-size: 18px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.banner-section .banner-search .detail-search-section .search-btn-section input[type=submit] {
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 21px;
+  height: 56px;
+  line-height: 56px;
+  background-color: #4361ee;
+  border-radius: 28px;
+  border: 0px;
+  display: inline-block;
+  padding: 0px 3rem;
+  color: #ffffff;
+}
+
+.banner-section .banner-search .detail-search-section .search-btn-section input[type=submit]:hover {
   font-family: "Roboto-Black";
   background: #ffffff;
   color: #4361ee;
@@ -215,7 +336,7 @@ header .login-btn {
   left: 0px;
   top: 0px;
   background-repeat: no-repeat;
-  width: 338px;
+  width: 263px;
 }
 
 .job-adv-section .jobadv-left img {
@@ -418,6 +539,7 @@ header .login-btn {
 .home-brands-section {
   position: relative;
   float: left;
+  z-index: 1;
 }
 
 .home-brands-section .home-brands {

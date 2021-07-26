@@ -40,6 +40,16 @@ $('#jobadv').owlCarousel({
 
 $(document).ready(function () {
     $('.dropdown-toggle').dropdown();
+
+    $('.detail-search').click(function(){
+        $('.detail-search-section').toggleClass('open');
+        $('.search-section').toggleClass('open');
+    });
+    $('.close-search-detail').click(function(){
+        $('.detail-search-section').removeClass('open');
+        $('.search-section').removeClass('open');
+    });
+    
 });
 
 
