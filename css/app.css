@@ -349,4 +349,89 @@ header .login-btn {
   font-family: 'Roboto-Black';
   font-weight: 900;
 }
+
+.home-brands-section .home-brands {
+  margin-top: 30px;
+  background-color: #f7f6f6;
+  border-radius: 20px;
+  float: left;
+  padding-top: 30px;
+}
+
+.home-brands-section .home-brands .brand-box {
+  width: 14.28%;
+  float: left;
+  margin-bottom: 30px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+}
+
+.home-brands-section .home-brands .brand-box img {
+  max-width: 100%;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+footer .footer-top {
+  position: relative;
+}
+
+footer .footer-top .footer-left {
+  width: 368px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+footer .footer-top .footer-left img {
+  width: 100%;
+}
+
+footer .footer-title {
+  font-family: 'Roboto-Black';
+  font-size: 24px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666768;
+}
+
+footer .footer-menu h3 {
+  font-family: 'Roboto-Black';
+  font-size: 18px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666768;
+}
+
+footer .footer-menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer .footer-menu ul li {
+  list-style: none;
+}
+
+footer .footer-menu ul li a {
+  font-family: 'Roboto-regular';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #666768;
+  text-decoration: none;
+}
 /*# sourceMappingURL=app.css.map */
