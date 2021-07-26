@@ -5,6 +5,7 @@ $orangeColor:#ff8100;
 $blueColor:#4361ee;
 $lightBlueColor:#6b7998;
 $greyColor:#808285;
+$advGreyColor:#444241;
 $brandColor:#f7f6f6;
 $wightGreyColor:#666768;
 $footerBottomGreyColor:#626160;
@@ -29,23 +30,23 @@ $borderGreyColor:rgba(191, 191, 191, 0.7);
 
 }
 
-@mixin borderRadiusaAll($bordervaltop,$bordervalright,$bordervalbottom,$bordervalleft)
+@mixin borderRadiusAll($bordervaltop,$bordervalright,$bordervalbottom,$bordervalleft)
 {
-  -webkit-border-top-left-radius: $bordervaltop;
-  -moz-border-top-left-radius:$bordervaltop ;
-  border-top-left-radius:$bordervaltop ;
+  -webkit-border-top-left-radius: $bordervaltop !important;
+  -moz-border-top-left-radius:$bordervaltop !important;
+  border-top-left-radius:$bordervaltop !important;
 
-  -webkit-border-top-right-radius: $bordervalright;
-  -moz-border-top-right-radius:$bordervalright ;
-  border-top-right-radius:$bordervalright ;
+  -webkit-border-top-right-radius: $bordervalright !important;
+  -moz-border-top-right-radius:$bordervalright !important;
+  border-top-right-radius:$bordervalright !important;
 
-  -webkit-border-bottom-right-radius: $bordervalbottom;
-  -moz-border-bottom-right-radius:$bordervalbottom ;
-  border-bottom-right-radius:$bordervalbottom ;
+  -webkit-border-bottom-right-radius: $bordervalbottom !important;
+  -moz-border-bottom-right-radius:$bordervalbottom !important;
+  border-bottom-right-radius:$bordervalbottom !important;
 
-  -webkit-border-bottom-left-radius: $bordervalleft;
-  -moz-border-bottom-left-radius:$bordervalleft ;
-  border-bottom-left-radius:$bordervalleft ;
+  -webkit-border-bottom-left-radius: $bordervalleft !important;
+  -moz-border-bottom-left-radius:$bordervalleft !important;
+  border-bottom-left-radius:$bordervalleft !important;
 
 }
 

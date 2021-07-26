@@ -11,6 +11,14 @@
     padding: 0px 15px;
     font-size:16px;
     cursor: pointer;
+    @include transitionMethod(0.2s);
+    &:hover{
+        font-family:"Roboto-Black";
+        background: $whiteColor;
+        color:$blueColor;
+        font-weight: 900;
+
+    }
 }
 .standart-link{
     text-decoration:underline ;
@@ -111,6 +119,13 @@ header{
                 display: inline-block;
                 padding:0px 3rem;
                 color:$whiteColor;
+                &:hover{
+                    font-family:"Roboto-Black";
+                    background: $whiteColor;
+                    color:$blueColor;
+                    font-weight: 900;
+
+                }
             }
         }
     }
@@ -155,6 +170,13 @@ header{
                 border-radius: 28px;
                 border: solid 1px $borderGreyColor;
                 background-color: $lightGreyColor;
+                &:hover{
+                    font-family:"Roboto-Black";
+                    background: $blueColor;
+                    color:$whiteColor ;
+                    font-weight: 900;
+            
+                }
             }
         }
     }
@@ -228,6 +250,23 @@ header{
             padding: 20px;  
             margin: 15px 0px;
             border-right: solid 1px $greyColorOpacity02;
+        
+            @include transitionMethod(0.2s);
+            cursor: pointer;
+            &:hover{
+             
+                .job-title{
+                    text-decoration: underline;
+                    color:$advGreyColor;
+                }
+                .brand{
+                    color:$advGreyColor;
+                    text-decoration: underline;
+                }
+                .brand-img{
+                    @include grayScaleMethod(0);
+                }
+            }
             .job-title{
                 font-family:"Roboto-Black";
                 font-size: 20px;
@@ -252,6 +291,7 @@ header{
             }
             .brand-img{
                 text-align: center;
+                @include grayScaleMethod(100%);
                 img{
                     display: inline-block;
                     width: 110px;
@@ -405,6 +445,11 @@ footer{
                     letter-spacing: normal;
                     color: $wightGreyColor;
                     text-decoration: none;
+                    &:hover{
+                        font-family: 'Roboto-Black';
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -448,6 +493,9 @@ footer{
                         letter-spacing: normal;
                         color: $whiteColor;
                         text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
@@ -473,9 +521,33 @@ footer{
                 }
             }
         }
+        .dropdown{
+            .dropdown-menu{
+                box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2);
+                background-color: #ffffff;
+                min-width: auto !important;
+                border:0px !important;
+                transform: translate(0px, 35px) !important;
+                @include borderRadiusAll(0px, 0px, 8px, 8px);
+            }
+        }
+        .dropdown-item:focus, .dropdown-item:hover{
+            text-decoration: underline;
+            background:none;
+        }
         .dropdown-toggle{
             background: none !important;
             border:0px !important;
+            
+            &.show{
+                @include borderRadiusAll(8px, 8px, 0px, 0px);
+                box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2);
+                background:$whiteColor !important;
+                color:$wightGreyColor;
+                font-family: 'Roboto-Bold';
+                font-weight: bold;
+                border: 1px solid #fff !important;
+            }
         }
     }
 }
