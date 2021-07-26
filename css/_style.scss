@@ -23,6 +23,9 @@
     line-height: normal;
     letter-spacing: normal;
 }
+.standart-title{
+
+}
 header{
     position:fixed;
     z-index: 12;
@@ -147,6 +150,174 @@ header{
                 border-radius: 28px;
                 border: solid 1px $borderGreyColor;
                 background-color: $lightGreyColor;
+            }
+        }
+    }
+}
+
+.job-adv-section{
+    margin-top:40px;
+    position: relative;
+    .jobadv-left{
+        position: absolute;
+        left:0px;
+        top:0px;
+        background-repeat: no-repeat;
+        width:338px;
+        img{
+            width: 100%;
+        }
+    }
+    .jobadv-right{
+        position: absolute;
+        right:0px;
+        bottom:0px;
+        background-repeat: no-repeat;
+        width:202px;
+        img{
+            width: 100%;
+        }
+    }
+    .job-main-title{
+        
+        h3{
+            font-family:"Roboto-Black";
+            font-size: 20px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $wightGreyColor;
+            margin-bottom:15px;
+        }
+    }
+    .job-adv{
+        background-color: $whiteColor;
+        border:1px solid $cccGreyColor;
+        @include borderRadius(8px);
+        position: relative;
+
+        .owl-prev,
+        .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: $navGreyColor !important;
+        @include borderRadius(8px);
+        color:$whiteColor !important;
+    
+        }
+
+        .owl-prev {
+        left: -20px;
+        }
+
+        .owl-next {
+        right:-20px;
+        }
+        .job-adv-box{
+            text-align: center;
+            padding: 20px;  
+            margin: 15px 0px;
+            border-right: solid 1px $greyColorOpacity02;
+            .job-title{
+                font-family:"Roboto-Black";
+                font-size: 20px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $wightGreyColor;
+                margin-bottom:5px;
+            }
+            .brand{
+                font-family: 'Roboto-Medium';
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $lightBlueColor;
+                margin-bottom:14px;
+            }
+            .brand-img{
+                text-align: center;
+                img{
+                    display: inline-block;
+                    width: 110px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.home-profile{
+    margin:40px 0px;
+    .profile-box{
+        @include borderRadius(8px);
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .profile-bottom{
+            position: absolute;
+            bottom:0px;
+            background-color: $blackColoropacity03;
+            width:100%;
+            height: 55px;
+            .left-link{
+                margin-top:16px;
+                height:23px;
+                width: 50%;
+                float: left;
+                text-align: center;
+                a{
+                    font-family: 'Roboto-Regular';
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: $whiteColor;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                        font-family: 'Roboto-Black';
+                        font-weight: 900;
+                    }
+                }
+            }
+            .right-link{
+                border-left: solid 1px $whiteColor;
+                margin-top:16px;
+                height:23px;
+                width: 50%;
+                text-align: center;
+                float: left;
+                a{
+                    font-family: 'Roboto-Regular';
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: $whiteColor;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                        font-family: 'Roboto-Black';
+                        font-weight: 900;
+                    }
+                }
             }
         }
     }
