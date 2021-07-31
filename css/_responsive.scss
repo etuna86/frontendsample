@@ -1,0 +1,96 @@
+
+
+@media screen and(max-width:768px){
+    header{
+        background: $blueColor;
+        padding: 10px 0px;
+        .login-btn{
+            margin:15px 0px;
+            display: block !important;
+            border: 0px !important;
+        }
+        .employer-login{
+            margin:15px 0px 0px 0px;
+            display: block !important;
+            border: 0px !important;
+        }
+        .register-btn
+        {
+            margin:15px 15px 15px 0px;
+            display: block !important;
+            border: 0px !important;
+        }
+    }
+    .mobile-menu-btn{
+        display: block;
+        height:40px;
+        width:40px;
+        text-align: center;
+        cursor: pointer;
+        i{
+            font-size:32px;
+            color:$whiteColor;
+        }
+    }
+    .main-menu{
+        display: none;
+        &.open{
+            display: block;
+            .col-md-4{
+                justify-content: flex-start!important;
+                display: block !important;
+            }
+        }
+    }
+
+    .banner-section{
+        .banner-search{
+            .search-section{
+                display: block;
+                .search-input{
+                    display: block;
+                }
+                .search-btn-section{
+                    display: block;
+                    width:100%;
+                    margin-top:15px;
+                    input[type=submit]{
+                        display: block;
+                        width:100%; 
+                        margin-left:0px;
+                    }
+                    .detail-search{
+                        margin:15px 0px
+                    }
+                }
+            }
+            .detail-search-section
+            {
+                top: 195px;
+                overflow-y: scroll;
+            }
+        }
+    }  
+
+    .most-search-section{
+        .mostsearch-inside{
+            display: block;
+            .most-search-title{
+                width: 100%;
+                display: block;
+            }
+        }
+    }  
+    .home-profile{
+        .profile-box{
+            margin:15px 0px;
+        }
+    } 
+    .home-brands-section{
+        .home-brands{
+            .brand-box{
+                width: 50%;
+            }
+        } 
+    } 
+}

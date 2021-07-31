@@ -1,7 +1,7 @@
 $('#mostsearch').owlCarousel({
     loop:false,
     margin:16,
-    nav:true,
+    nav:false,
     items:5,
     responsive:{
         0:{
@@ -50,6 +50,10 @@ $(document).ready(function () {
         $('.search-section').removeClass('open');
     });
     
+    $('.mobile-menu-btn').click(function(){
+        $('.main-menu').toggleClass('open');
+    });
+
 });
 
 

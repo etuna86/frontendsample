@@ -23,6 +23,10 @@
   src: url("../fonts/Nunito_Sans/NunitoSans-Bold.ttf") format("truetype");
 }
 
+.mobile-menu-btn {
+  display: none;
+}
+
 .standart-btn, header .employer-login, header .register-btn, header .login-btn {
   font-family: 'Roboto-Medium';
   height: 30px;
@@ -755,5 +759,84 @@ footer .footer-bottom .dropdown-toggle.show {
   font-family: 'Roboto-Bold';
   font-weight: bold;
   border: 1px solid #fff !important;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background: #4361ee;
+    padding: 10px 0px;
+  }
+  header .login-btn {
+    margin: 15px 0px;
+    display: block !important;
+    border: 0px !important;
+  }
+  header .employer-login {
+    margin: 15px 0px 0px 0px;
+    display: block !important;
+    border: 0px !important;
+  }
+  header .register-btn {
+    margin: 15px 15px 15px 0px;
+    display: block !important;
+    border: 0px !important;
+  }
+  .mobile-menu-btn {
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .mobile-menu-btn i {
+    font-size: 32px;
+    color: #ffffff;
+  }
+  .main-menu {
+    display: none;
+  }
+  .main-menu.open {
+    display: block;
+  }
+  .main-menu.open .col-md-4 {
+    justify-content: flex-start !important;
+    display: block !important;
+  }
+  .banner-section .banner-search .search-section {
+    display: block;
+  }
+  .banner-section .banner-search .search-section .search-input {
+    display: block;
+  }
+  .banner-section .banner-search .search-section .search-btn-section {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .banner-section .banner-search .search-section .search-btn-section input[type=submit] {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .banner-section .banner-search .search-section .search-btn-section .detail-search {
+    margin: 15px 0px;
+  }
+  .banner-section .banner-search .detail-search-section {
+    top: 195px;
+    overflow-y: scroll;
+  }
+  .most-search-section .mostsearch-inside {
+    display: block;
+  }
+  .most-search-section .mostsearch-inside .most-search-title {
+    width: 100%;
+    display: block;
+  }
+  .home-profile .profile-box {
+    margin: 15px 0px;
+  }
+  .home-brands-section .home-brands .brand-box {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=app.css.map */
